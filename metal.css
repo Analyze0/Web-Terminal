@@ -1,0 +1,51 @@
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 99% !important;
+  background:url(/images/metal.webp) !important;
+}
+textarea#setter {
+  left: -1000px !important;
+  position: absolute !important;
+}
+.cursor {
+  font-size: 12px !important;
+  background-color: #302f45 !important;
+  animation: blinker 1s linear infinite;
+}
+#terminal {
+  color:#302f45 !important;
+  margin: 8px !important;
+  cursor: text !important;
+  height: 500px !important;
+  overflow:auto !important;
+}
+#writer {
+  font-family: cursor, courier !important;
+  font-weight: bold !important;
+}
+#getter {
+  margin: 5px !important;
+}
+@keyframes blinker {  
+  50% { opacity: 0.0;}
+}
+::selection {
+  background: #302f45 !important;
+  color:white !important;
+}
+.userText{
+  background:white;
+  border-radius:4px;
+  color: #292929 !important;
+}
+.primaryOutput{
+  background:white;
+  border-radius:4px;
+  color:#575757 !important;
+}
+.secondaryOutput{
+  background:white;
+  border-radius:4px;
+  color:#000000 !important;
+}

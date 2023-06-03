@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 99%;
+  background:#302f45;
+}
+textarea#setter {
+  left: -1000px;
+  position: absolute;
+}
+.cursor {
+  font-size: 12px;
+  background-color: white;
+  color: transparent;
+  position: relative;
+  opacity: 0.5;
+  height: 1.5em;
+  width: 8px;
+  max-width: 8px;
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
+}
+#terminal {
+  color:white;
+  margin: 8px;
+  cursor: text;
+  height: 500px;
+  overflow:auto;
+}
+#writer {
+  font-family: cursor, courier;
+  font-weight: bold;
+}
+#getter {
+  margin: 5px;
+}
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
+::selection {
+  background: white;
+  color:#302f45;
+}
+.userText{
+  color: #00c89c;
+}
+.primaryOutput{
+  color:#4786ff;
+}
+.secondaryOutput{
+  color:#ff8359;
+}
